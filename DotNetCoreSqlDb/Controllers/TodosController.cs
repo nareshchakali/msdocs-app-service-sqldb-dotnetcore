@@ -28,9 +28,9 @@ namespace DotNetCoreSqlDb.Controllers
             {
                 todos = await _context.Todo.ToListAsync();
             }
-            catch (Exception e)
+            catch (Exception)
             {
-
+                
                 return View(todos);
             }
 
